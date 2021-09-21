@@ -44,11 +44,11 @@ def minimum_bribes(q):
             print("Too chaotic")
             return
 
-        print('o: ' + str(o))
+        #print('o: ' + str(o))
         # Here we create a list from a range. This range is the from the original position of the person - 2, to the current position
         for k in q[max(o - 2, 0):i]:
             if k > o:  # If the values we pass are greater than that of the current person,  then those bribed the person.
-                print(str(k) + ' > ' + str(o))
+                #print(str(k) + ' > ' + str(o))
                 bribes += 1
 
     print(bribes)
